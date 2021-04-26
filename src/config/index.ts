@@ -7,7 +7,7 @@ export const BASE_ENDPOINT =
   process.env[EnvKeys.RAPIDSEC_DEV_API_ENDPOINT] || `https://api.rapidsec.com`;
 
 export const REMOTE_ENDPOINTS = {
-  config: `${BASE_ENDPOINT}/api/v1/csp`,
+  config: `${BASE_ENDPOINT}/api/v1/headers`,
 };
 
 const ajv = new AJV();
