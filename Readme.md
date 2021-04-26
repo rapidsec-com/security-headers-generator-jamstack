@@ -1,6 +1,6 @@
-# RapidSec Static Site(JAM Stack) Microagent
+# Security Headers Generator for Static Sites (JAM Stack) by RapidSec
 
-RapidSec Microagent monitors and protects your users and data from the most common and painful Web Client side attacks.
+RapidSec's integration monitors and protects your users and data from the most common and painful Web Client side attacks.
 
 These include:
 
@@ -10,49 +10,54 @@ These include:
 - Magecart · It works by operatives gaining access to websites either directly or via third-party services and injecting malicious JavaScript that steals data shoppers enter into online payment forms, typically on checkout pages.
 - CSIM · Client Side Injected Malware: These vulnerabilities arise when applications using a client-side template framework dynamically embed user input in web pages. The security impact of client-side injection vulnerabilities is dependent upon the nature of the vulnerable application, the kinds of data and functionality that it contains, and the other applications that belong to the same domain and organization.
 
-For more details, visit [rapidsec.com](https://www.rapidsec.com/?utm_source=static_npm_agent)
+For more details, visit [rapidsec.com](https://www.rapidsec.com/?utm_source=jam_stack_npm_agent)
 
 ## Installation
 
-1. You will need first to [signup](https://rapidsec.com/sign-up) with Node.js integration to get a token.
-1. Set environment variable `RAPIDSEC_SDK_TOKEN`.
-1. Install Node.js module:
+1. You will need first to [Sign Up](https://rapidsec.com/sign-up) to RapidSec and start a project.
+1. Choose "MicoAgent" and your preferred deployment (Firebase, Vercel, Netlify).
+1. Set the environment variable `RAPIDSEC_SDK_TOKEN` in the hosting dashboard. RapidSec creates 3 tokens by default - for development, staging (preview), production.
+
+1. Install NPM module:
    ```
-   yarn add @rapidsec/static-sdk
+   yarn add @rapidsec/sec-header-generator
    ```
    or
    ```
-   npm install @rapidsec/static-sdk
+   npm install @rapidsec/sec-header-generator
    ```
 1. Add `postbuild` script as shown below
 
    1. For Netlify
 
       ```json
-        "postbuild": "rapidsec netlify"
+        "postbuild": "rapidsec-headers netlify"
       ```
 
    1. For Vercel
 
       ```json
-        "postbuild": "rapidsec vercel"
+        "postbuild": "rapidsec-headers vercel"
       ```
 
    1. For Firebase
 
       ```json
-        "postbuild": "rapidsec firebase"
+        "postbuild": "rapidsec-headers firebase"
       ```
 
-   1. Interested in others?
+   1. Interested in other integrations?
       Let us know [here](https://rapidsec.com/contact-us)
 
-1. That's all, no more config 🎉
+1. Deploy your site, and visit it, to make sure that CSP events are being generated. You can use [CSP scanner](https://chrome.google.com/webstore/detail/csp-scanner-test-analyze/eoiiiomeoogcpnkdedcodoeaacpdfmdj?hl=en) to make sure.
+1. Great, RapidSec UI should let you know that you are conncected 🎉
+1. Follow the instructions in RapidSec to choose the best Security headers for your site.
+1. When you Publish a new vesion of your security headers in RapidSec, you will be prompted to add deploy hooks for your enviroment, so that you can issue new builds when RapidSec versions are built (this is Optional).
 
 ## Compatibility
 
-This Microagent is compatible with Node.js 10 and higher.
+This integration is compatible with Node.js 10 and higher.
 
 ## LICENSE
 
-See [LICENSE](https://github.com/rapidsec-com/static-sdk/blob/master/LICENSE)
+See [LICENSE](https://github.com/rapidsec-com/security-headers-generator-jamstack/blob/master/LICENSE)
