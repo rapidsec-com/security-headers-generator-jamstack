@@ -1,0 +1,20 @@
+RAPIDSEC SOFTWARE LICENSE TERMS
+
+THESE SOFTWARE LICENSE TERMS (THIS "AGREEMENT") CONSTITUTE A BINDING CONTRACT BETWEEN YOU AND RAPID-SEC LTD ("RapidSec"). BY DOWNLOADING, INSTALLING OR USING THE SOFTWARE (DEFINED BELOW), YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THIS AGREEMENT.  IF YOU DO NOT AGREE WITH ANY OF THE TERMS AND CONDITIONS OF THIS AGREEMENT, DO NOT USE THE SOFTWARE.
+
+License Grant. RapidSec grants you a limited, worldwide, royalty-free, non-assignable, non-exclusive, and non-sublicensable license, subject to the restrictions stated below, to use RapidSec's proprietary SDK package (the "Software") solely for the purposes of developing, testing and running your applications that run RapidSec's web security and performance optimization platform.  The Software comes in packaged code, as well as source code form ("Source Code"). YOU SHALL NOT COPY, MODIFY, ADAPT, OR CREATE ANY DERIVATIVE WORKS OF THE SOURCE CODE.
+You may allow your contractor(s) to use the Software, provided they are acting on your behalf to exercise license rights granted in this Agreement and provided further that you will be responsible for their compliance with this Agreement in such use. You may make copies of the Software (other than the Source Code) to the extent reasonably necessary to exercise the license rights granted in this Agreement. The software is licensed, not sold. RapidSec reserves all other rights.
+
+Restrictions. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to): (a) modify, adapt, or create any derivative works of the Software or any associated documentation, including the Source Code, or reverse engineer, decompile or disassemble any part of the Software; (b) work around any technical limitations in the Software that only allow you to use it in certain ways; (c) remove or modify any notices of RapidSec in the Software; (d) use the Software in any way that is illegal or to create or spread malware; or (e) distribute, lend or transfer the Software to any third party or provide the Software as a stand-alone hosted solution for others to use.
+
+Support Services. RapidSec is not obligated under this Agreement to provide any support services for the Software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
+
+DISCLAIMER OF WARRANTY. THE SOFTWARE IS LICENSED “AS IS”, WITHOUT ANY WARRANTIES, GUARANTEES, OR CONDITIONS. RAPIDSEC EXCLUDES ALL IMPLIED WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT
+
+LIMITATION OF LIABILITY. IF YOU HAVE ANY GROUNDS FOR DAMAGES, YOU CAN RECOVER FROM RAPIDSEC ONLY DIRECT DAMAGES UP TO U.S. $5.00. YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING WITHOUT LIMITATION, INDIRECT, CONSEQUENTIAL, SPECIAL, OR INCIDENTAL DAMAGES, OR ANY LOSS OF PROFITS, DATA, REPUTATION, OR GOOD WILL.
+
+Termination. You may terminate this Agreement by destroying all copies of the Software. This Agreement shall automatically terminate without notice if you fail to comply with any of the terms of this Agreement, in which case you shall promptly destroy all copies of the Software.
+
+Entire Agreement. This Agreement is the entire agreement for the Software.
+
+Governing Law.  This Agreement is governed by the substantive laws of the State of Israel, and you and RapidSec agree to submit to the exclusive jurisdiction of, and venue in, the courts of Tel Aviv-Yafo in any dispute arising out of or relating to this Agreement.

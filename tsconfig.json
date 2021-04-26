@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/cjs",
+    "lib": ["ES2019"],
+    "target": "ES2015",
+    "module": "CommonJS",
+    "declaration": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules", "dist/"]
+}
