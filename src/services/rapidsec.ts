@@ -4,6 +4,7 @@ const debug = debugFn("rapidsec:service");
 import fetch from "node-fetch";
 import { REMOTE_ENDPOINTS, validateRemoteConfig } from "../config";
 import { LocalConfig, RemoteConfig } from "../types";
+import { processConfig } from "../utils";
 
 export async function loadRemoteConfig(
   localConfig: LocalConfig,
@@ -36,5 +37,9 @@ export async function loadRemoteConfig(
     );
   }
   debug(`loaded remote config`);
-  return config;
+  return processConfig({
+    remoteConfig: config,
+    version,
+    agent: `static-${provider}`,
+  });
 }
