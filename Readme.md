@@ -26,7 +26,14 @@ For more details, visit [rapidsec.com](https://www.rapidsec.com/?utm_source=jam_
    ```
    npm install @rapidsec/sec-header-generator
    ```
-1. In you project `package.json`, add a `postbuild` hook script as shown below
+1. In you project `package.json`, add a `postbuild` script as shown below
+    ```json
+      "scripts": {
+          // Your other scripts here //
+          "postbuild": "rapidsec-headers YOUR_PLATFORM"
+      }
+    ```
+
 
    1. For Netlify
 
