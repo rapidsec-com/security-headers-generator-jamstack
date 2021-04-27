@@ -1,3 +1,4 @@
+import consola from "consola";
 import debugFn from "debug";
 
 import { existsSync, readFileSync, writeFileSync } from "fs";
@@ -32,7 +33,7 @@ export class Firebase extends IntegrationProvider {
     this.loadConfig();
   }
   loadConfig() {
-    console.log({ input: this.input });
+    consola.info(`rapidsec: Loading firebase.json from ${this.input}`);
     if (existsSync(this.input)) {
       try {
         this.config = JSON.parse(readFileSync(this.input, "utf-8"));
@@ -46,6 +47,9 @@ export class Firebase extends IntegrationProvider {
   outputConfig() {
     debug(`Writing Firebase config`);
     writeFileSync(this.output, JSON.stringify(this.config, null, 2));
+    consola.success(
+      `rapidsec: Updated ${this.output} with headers from RapidSec`
+    );
   }
   public generate() {
     debug(`Generating Firebase config`);

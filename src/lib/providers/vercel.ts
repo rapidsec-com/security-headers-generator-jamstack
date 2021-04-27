@@ -1,4 +1,5 @@
 import debugFn from "debug";
+import consola from "consola";
 
 import { existsSync, readFileSync, writeFileSync } from "fs";
 import { IntegrationProvider, ProviderArgs } from "../../types";
@@ -20,6 +21,7 @@ export class Vercel extends IntegrationProvider {
     this.loadConfig();
   }
   loadConfig() {
+    consola.info(`rapidsec: Loading vercel.json from ${this.input}`);
     if (existsSync(this.input)) {
       try {
         this.config = JSON.parse(readFileSync(this.input, "utf-8"));
@@ -33,6 +35,9 @@ export class Vercel extends IntegrationProvider {
   outputConfig() {
     debug(`Writing vercel config`);
     writeFileSync(this.output, JSON.stringify(this.config, null, 2));
+    consola.success(
+      `rapidsec: Updated ${this.output} with headers from RapidSec`
+    );
   }
   public generate() {
     debug(`Generating vercel config`);

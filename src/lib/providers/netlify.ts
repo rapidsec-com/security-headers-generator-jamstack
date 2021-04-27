@@ -1,3 +1,4 @@
+import consola from "consola";
 import debugFn from "debug";
 
 import { existsSync, readFileSync, writeFileSync } from "fs";
@@ -23,6 +24,7 @@ export class Netlify extends IntegrationProvider {
     this.loadConfig();
   }
   loadConfig() {
+    consola.info(`rapidsec: Loading _headers from ${this.input}`);
     if (existsSync(this.input)) {
       this.config = readFileSync(this.input, "utf-8");
       debug(`Loaded netlify headers file`);
@@ -31,6 +33,9 @@ export class Netlify extends IntegrationProvider {
   outputConfig() {
     debug(`Writing vercel config`);
     writeFileSync(this.output, this.config);
+    consola.success(
+      `rapidsec: Updated ${this.output} with headers from RapidSec`
+    );
   }
   public generate() {
     debug(`Generating vercel config`);
