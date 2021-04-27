@@ -15,7 +15,10 @@ export function processConfig({
     headers: headers.map(({ name, value }) => {
       return {
         name,
-        value: value.replace(/sdkv=-1.-1.-1_api/g, `sdkv=${version}_${agent}`),
+        value: value.replace(
+          /sdkv=-1.-1.-1_unknown/g,
+          `sdkv=${version}_${agent}`
+        ),
       };
     }),
   };
