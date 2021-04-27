@@ -1,4 +1,5 @@
 import debugFn from "debug";
+import consola from "consola";
 
 import { getLoacalConfig } from "../../config";
 import { ProviderArgs, Providers } from "../../types";
@@ -30,7 +31,7 @@ export class Provider {
           break;
       }
     } catch (error) {
-      console.error(error.message);
+      consola.error(error.message);
     }
   }
 }

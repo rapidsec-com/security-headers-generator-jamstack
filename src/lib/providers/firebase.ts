@@ -59,7 +59,6 @@ export class Firebase extends IntegrationProvider {
         value,
       })
     );
-    console.log(this.config);
     this.config = {
       ...this.config,
       hosting: {

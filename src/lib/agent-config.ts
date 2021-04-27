@@ -1,5 +1,7 @@
 import path from "path";
 import fs from "fs";
+import consola from "consola";
+
 import { LocalConfig, Providers, RemoteConfig } from "../types";
 import { loadRemoteConfig } from "../services/rapidsec";
 
@@ -26,8 +28,8 @@ export class AgentConfig {
         this.remoteConfig = remoteConfig;
       })
       .catch((error) => {
-        console.error(error.message);
-        console.error(error.stack);
+        consola.error(error.message);
+        consola.error(error.stack);
       });
   }
 }

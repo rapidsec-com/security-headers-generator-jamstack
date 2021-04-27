@@ -18,7 +18,7 @@ export function getLoacalConfig(): LocalConfig {
   const token = process.env[EnvKeys.RAPIDSEC_SDK_TOKEN];
   if (!token) {
     throw new Error(
-      `This RapidSec Static Microagent requires that you have a RapidSec token configured using environment variable "RAPIDSEC_SDK_TOKEN". You can get your free token at: https://rapidsec.com/client-side-protection and set up Content-Security-Policy and other security headers in minutes`
+      `@rapidsec/sec-header-generator requires that you have a RapidSec token configured using environment variable "RAPIDSEC_SDK_TOKEN". You can get your free token at: https://rapidsec.com/client-side-protection and set up Content-Security-Policy and other security headers in minutes`
     );
   }
   return {
