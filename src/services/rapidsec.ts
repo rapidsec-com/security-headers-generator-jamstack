@@ -15,10 +15,11 @@ export async function loadRemoteConfig(
   debug(
     `Fetching remote config from ${REMOTE_ENDPOINTS.config} with token ${localConfig.token}`
   );
+  const agentName = `agent-static-${provider}`;
   const res = await fetch(REMOTE_ENDPOINTS.config, {
     headers: {
       "x-token": localConfig.token,
-      "user-agent": `rapidsec_agent-static-${provider}_${version}`,
+      "user-agent": `rapidsec_${agentName}_${version}`,
     },
   });
 
@@ -40,6 +41,6 @@ export async function loadRemoteConfig(
   return processConfig({
     remoteConfig: config,
     version,
-    agent: `static-${provider}`,
+    agent: agentName,
   });
 }
