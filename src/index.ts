@@ -22,8 +22,8 @@ sade("rapidsec")
   .describe(`Adds security headers to vercel.json file using RapidSec Service`)
   .option(`-i, --input`, `Provide path to existing vercel.json file`)
   .option(`-o, --output`, `Provide path to output vercel.json file`)
-  .example(`netlify -o ./out/vercel.json`)
-  .example(`netlify -i ./public/vercel.json -o ./out/vercel.json`)
+  .example(`vercel -o ./out/vercel.json`)
+  .example(`vercel -i ./public/vercel.json -o ./out/vercel.json`)
   .action((options) => {
     provider.handleProvider(options, Providers.Vercel);
   })
