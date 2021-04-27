@@ -30,7 +30,7 @@
   ],
   "author": "rapidsec",
   "license": "proprietary-free-to-use",
-  "repository": "https://github.com/rapidsec-com/static-sdk",
+  "repository": "https://github.com/rapidsec-com/security-headers-generator-jamstack",
   "devDependencies": {
     "@types/debug": "^4.1.5",
     "@types/jest": "^26.0.20",
