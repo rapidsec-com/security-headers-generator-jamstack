@@ -1,6 +1,6 @@
 {
   "name": "@rapidsec/sec-header-generator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Security Headers Generator for Static Sites (JAM Stack) by RapidSec",
   "main": "dist/cjs/index.js",
   "types": "dist/cjs/index.d.ts",
