@@ -49,6 +49,8 @@ For more details, visit [rapidsec.com](https://www.rapidsec.com/?utm_source=jam_
 
    1. For Vercel
 
+      > Note: Not working at present due to [this limitation](https://github.com/vercel/vercel/discussions/6162)
+
       ```json
         "postbuild": "rapidsec-headers vercel"
       ```
