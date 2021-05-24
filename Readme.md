@@ -15,7 +15,7 @@ For more details, visit [rapidsec.com](https://www.rapidsec.com/?utm_source=jam_
 ## Installation
 
 1. You will need first to [Sign Up](https://rapidsec.com/sign-up) to RapidSec and start a project.
-1. Choose "MicoAgent" and your preferred deployment (Firebase, Vercel, Netlify).
+1. Choose either Firebase or Netlify deployment method.
 1. Set the environment variable `RAPIDSEC_SDK_TOKEN` in the hosting dashboard. RapidSec creates 3 tokens by default - for development, staging (preview), production.
 
 1. Install NPM module:
