@@ -825,10 +825,10 @@ ajv@^7.0.2:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-ajv@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.0.0.tgz#392f0aee6a4b6ee8367f5b0bf516e43210762ae7"
-  integrity sha512-AgKgeO3Y58RMZoi3S+6OYqGjndt8VlrCwGM3bQEMtbGTLOO+VrymV1Fb0TnffzG4gSwa6MEgIreOn9y3Q9rt+A==
+ajv@^8.4.0:
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.6.0.tgz#60cc45d9c46a477d80d92c48076d972c342e5720"
+  integrity sha512-cnUG4NSBiM4YFBxgZIj/In3/6KX+rQ2l2YPRVcvAMQGWEPKuXoPIhxzwqh31jA3IPbI4qEOp/5ILI4ynioXsGQ==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
